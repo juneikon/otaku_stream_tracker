@@ -1,32 +1,47 @@
-# # Otaku Stream Tracker 🎥🍜
+# 🌀 Otaku Stream Tracker
 
-A web application to track and manage anime series, stream updates, and upcoming episodes.  
-Built with **Flask** and modern frontend magic.
+**Track. Update. Delete. Repeat.**  
+Built for anime lovers who want to keep their watchlist sharp and stylish.  
+This isn't just another CRUD app — it's your personal anime command center 🎮✨
 
-## 🌟 Features
-- Track multiple anime series
-- Manage status: Watching / Completed / Dropped
-- Next episode reminders
-- Clean and minimal UI
+---
 
-## 🛠️ Tech Stack
-- 🐍 Flask (Backend)
-- 🌐 HTML + CSS + JS (Frontend)
-- 🐘 SQLite (Database, or upgradeable to PostgreSQL)
+## 🎯 What You Can Do
 
-## 🚀 Setup Instructions
+- 🔥 **Add** new anime to your stream list like a boss  
+- 🛠️ **Edit** titles, status, or progress in a flash  
+- ❌ **Delete** finished or dropped shows — clean your list like a true ninja  
+- 🎨 Minimal UI that lets the content shine
+
+---
+
+## 💻 Tech Arsenal
+
+- ⚙️ **Flask** — Lightweight, fast, and battle-tested
+- 🖼️ **HTML + CSS** — Styled for simplicity  
+- 🧠 **SQLite** — Because light and lethal wins  
+- 🐍 **Python** — The chakra core of this jutsu
+
+---
+
+## 🚀 How to Launch the Tracker
 
 ```bash
-# 1. Clone the repository
+# Clone the repo from your hidden scrolls
 git clone https://github.com/juneikon/otaku_stream_tracker.git
 cd otaku_stream_tracker
 
-# 2. Set up a virtual environment
+# Summon your virtual environment
 python -m venv env
-source env/bin/activate  # On Windows: env\Scripts\activate
+env\Scripts\activate       # for Windows users
+# OR
+source env/bin/activate    # for Mac/Linux
 
-# 3. Install the dependencies
+# Install the sacred packages
 pip install -r requirements.txt
 
-# 4. Run the Flask app
-python app.py  # or however your entry point is named
+# Channel your chakra and run
+python run.py
+
+# Open your browser portal
+http://127.0.0.1:5000
