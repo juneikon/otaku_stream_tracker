@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block content %}
+<form method="POST">
+    <div class="mb-3">
+        <label>Anime Title</label>
+        <input type="text" name="title" class="form-control" value="{{ anime.title }}" required>
+    </div>
+    <div class="mb-3">
+        <label>Status</label>
+        <select name="status" class="form-control">
+            <option {% if anime.status == 'Watching' %}selected{% endif %}>Watching</option>
+            <option {% if anime.status == 'Completed' %}selected{% endif %}>Completed</option>
+            <option {% if anime.status == 'On-Hold' %}selected{% endif %}>On-Hold</option>
+            <option {% if anime.status == 'Dropped' %}selected{% endif %}>Dropped</option>
+            <option {% if anime.status == 'Plan to Watch' %}selected{% endif %}>Plan to Watch</option>
+        </select>
+    </div>
+    <button class="btn btn-primary">Update Anime</button>
+</form>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+<a href="{{ url_for('main.add_anime') }}" class="btn btn-primary mb-3">Add Anime</a>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for anime in anime_list %}
+        <tr>
+            <td>{{ anime.title }}</td>
+            <td>{{ anime.status }}</td>
+            <td>
+                <a href="{{ url_for('main.update_anime', id=anime.id) }}" class="btn btn-sm btn-warning">Update</a>
+                <a href="{{ url_for('main.delete_anime', id=anime.id) }}" class="btn btn-sm btn-danger">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

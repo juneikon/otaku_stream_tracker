@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block content %}
+<form method="POST">
+    <div class="mb-3">
+        <label>Anime Title</label>
+        <input type="text" name="title" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>Status</label>
+        <select name="status" class="form-control">
+            <option>Watching</option>
+            <option>Completed</option>
+            <option>On-Hold</option>
+            <option>Dropped</option>
+            <option>Plan to Watch</option>
+        </select>
+    </div>
+    <button class="btn btn-success">Add Anime</button>
+</form>
+{% endblock %}
